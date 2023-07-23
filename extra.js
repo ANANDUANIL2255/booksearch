@@ -7,6 +7,7 @@ function addDetails() {
     book = { bname, aname, pub, desc }
     if (bname in localStorage) {
         // ale.innerHTML = `<p class="text-danger mt-2">User Already Exist</p>`
+        alert ("BOOK DETAILS ADDED")
     }
     else {
         // create an object user with user details
@@ -15,6 +16,7 @@ function addDetails() {
         // store in localStorage
         localStorage.setItem(bname, JSON.stringify(book))
         // window.location='search.html'
+        alert (" NEW BOOK DETAILS ADDED")
     }
 }
 function searchBook() {
@@ -32,6 +34,6 @@ function display() {
     <p>DESCRIPTION : ${displayBook.desc}</p>`
     }
     else {
-        dis.innerHTML = `<p class="text-danger">BOOK NOT FOUND</p>`
+        dis.innerHTML = `<p  style="color:yellow">BOOK NOT FOUND</p>`
     }
 }
