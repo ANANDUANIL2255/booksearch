@@ -7,7 +7,7 @@ function addDetails() {
     book = { bname, aname, pub, desc }
     if (bname in localStorage) {
         // ale.innerHTML = `<p class="text-danger mt-2">User Already Exist</p>`
-        alert ("BOOK DETAILS ADDED")
+        alert ("BOOK DETAILS ALREADY EXIST")
     }
     else {
         // create an object user with user details
